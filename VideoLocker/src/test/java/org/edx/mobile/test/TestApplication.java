@@ -1,7 +1,7 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
-import org.edx.mobile.base.MainApplication;
-import org.edx.mobile.logger.Logger;
+import org.edx.indonesiax.base.MainApplication;
+import org.edx.indonesiax.logger.Logger;
 
 /**
  * The {@link MainApplication} class is overridden for testing in

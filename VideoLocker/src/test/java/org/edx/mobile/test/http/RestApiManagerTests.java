@@ -1,22 +1,21 @@
-package org.edx.mobile.test.http;
+package org.edx.indonesiax.test.http;
 
 import com.google.inject.Injector;
 
-import org.edx.mobile.core.IEdxEnvironment;
-import org.edx.mobile.http.IApi;
-import org.edx.mobile.http.RestApiManager;
-import org.edx.mobile.model.api.AnnouncementsModel;
-import org.edx.mobile.model.api.AuthResponse;
-import org.edx.mobile.model.api.EnrolledCoursesResponse;
-import org.edx.mobile.model.api.HandoutModel;
-import org.edx.mobile.model.api.ProfileModel;
-import org.edx.mobile.model.api.ResetPasswordResponse;
-import org.edx.mobile.model.api.SectionEntry;
-import org.edx.mobile.model.api.SyncLastAccessedSubsectionResponse;
-import org.edx.mobile.model.api.VideoResponseModel;
-import org.edx.mobile.module.registration.model.RegistrationDescription;
-import org.edx.mobile.services.ServiceManager;
-import org.edx.mobile.util.Config;
+import org.edx.indonesiax.http.IApi;
+import org.edx.indonesiax.http.RestApiManager;
+import org.edx.indonesiax.model.api.AnnouncementsModel;
+import org.edx.indonesiax.model.api.AuthResponse;
+import org.edx.indonesiax.model.api.EnrolledCoursesResponse;
+import org.edx.indonesiax.model.api.HandoutModel;
+import org.edx.indonesiax.model.api.ProfileModel;
+import org.edx.indonesiax.model.api.ResetPasswordResponse;
+import org.edx.indonesiax.model.api.SectionEntry;
+import org.edx.indonesiax.model.api.SyncLastAccessedSubsectionResponse;
+import org.edx.indonesiax.model.api.VideoResponseModel;
+import org.edx.indonesiax.module.registration.model.RegistrationDescription;
+import org.edx.indonesiax.services.ServiceManager;
+import org.edx.indonesiax.util.Config;
 import org.junit.Ignore;
 import org.mockito.Mockito;
 import org.robolectric.RuntimeEnvironment;
@@ -38,7 +37,7 @@ public class RestApiManagerTests extends OkHttpBaseTestCase {
     public void setUp() throws Exception {
         super.setUp();
     }
-    
+
     @Override
     public void addBindings() {
         super.addBindings();

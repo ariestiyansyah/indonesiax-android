@@ -1,10 +1,10 @@
-package org.edx.mobile.test.module;
+package org.edx.indonesiax.test.module;
 
-import org.edx.mobile.model.download.NativeDownloadModel;
-import org.edx.mobile.module.download.DownloadFactory;
-import org.edx.mobile.module.download.IDownloadManager;
-import org.edx.mobile.module.prefs.UserPrefs;
-import org.edx.mobile.test.BaseTestCase;
+import org.edx.indonesiax.model.download.NativeDownloadModel;
+import org.edx.indonesiax.module.download.DownloadFactory;
+import org.edx.indonesiax.module.download.IDownloadManager;
+import org.edx.indonesiax.module.prefs.UserPrefs;
+import org.edx.indonesiax.test.BaseTestCase;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 
@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 public class DownloadTests extends BaseTestCase {
 
     private IDownloadManager dm;
-    
+
     @Override
     public void setUp() throws Exception {
         super.setUp();

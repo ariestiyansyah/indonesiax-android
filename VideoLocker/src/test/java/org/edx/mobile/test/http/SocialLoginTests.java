@@ -1,7 +1,6 @@
-package org.edx.mobile.test.http;
+package org.edx.indonesiax.test.http;
 
-import org.edx.mobile.http.Api;
-import org.edx.mobile.model.api.ProfileModel;
+import org.edx.indonesiax.model.api.ProfileModel;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 
@@ -23,7 +22,7 @@ public class SocialLoginTests extends HttpBaseTestCase  {
     public void setUp() throws Exception {
         super.setUp();
     }
-    
+
     @Test
     public void testGetProfile() throws Exception {
         if ( shouldSkipTest ) return;

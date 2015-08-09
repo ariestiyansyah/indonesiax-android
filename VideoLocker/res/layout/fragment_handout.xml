@@ -5,13 +5,13 @@
     android:background="@color/grey_act_background"
     android:orientation="vertical" >
 
-    <org.edx.mobile.view.custom.EdxWebView
+    <org.edx.indonesiax.view.custom.EdxWebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey_act_background" />
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/downloadMessage"
         style="@style/downloading_message"
         android:visibility="gone"
@@ -22,7 +22,7 @@
         style="@style/api_progress_style"
         android:visibility="gone" />
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/no_coursehandout_tv"
         style="@style/bold_text"
         android:layout_width="match_parent"

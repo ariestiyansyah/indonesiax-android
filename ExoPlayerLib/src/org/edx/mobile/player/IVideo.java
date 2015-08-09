@@ -1,4 +1,4 @@
-package org.edx.mobile.player;
+package org.edx.indonesiax.player;
 
 import java.util.List;
 

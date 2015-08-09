@@ -11,13 +11,13 @@
         android:dividerHeight="12.0sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    
+
      <ProgressBar
               android:id="@+id/api_spinner"
               style="@style/api_progress_style"
               android:visibility="gone" />
-     
-     <org.edx.mobile.view.custom.ETextView
+
+     <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/no_announcement_tv"
         style="@style/bold_text"
         android:layout_width="match_parent"
@@ -29,5 +29,5 @@
         android:visibility="gone"
         android:textColor="@color/empty_list_text"
         android:textSize="20sp" />
-    
+
 </RelativeLayout>

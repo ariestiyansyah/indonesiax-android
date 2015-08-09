@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="org.edx.mobile.view.GroupsListFragment">
+    tools:context="org.edx.indonesiax.view.GroupsListFragment">
 
     <ProgressBar
         android:id="@+id/api_spinner"
@@ -49,7 +49,7 @@
             android:gravity="center"
             android:visibility="gone">
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 style="@style/bold_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:textStyle="bold"
                 android:text="@string/empty_groups_header"/>
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 style="@style/regular_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             android:layout_margin="8dp"
             android:layout_alignParentBottom="true">
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 style="@style/bold_text"
                 android:id="@+id/label_connect_facebook"
                 android:layout_width="match_parent"

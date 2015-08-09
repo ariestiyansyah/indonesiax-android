@@ -1,4 +1,4 @@
-package org.edx.mobile.player;
+package org.edx.indonesiax.player;
 
 import com.google.android.exoplayer.ExoPlayer;
 
@@ -11,7 +11,7 @@ import com.google.android.exoplayer.ExoPlayer;
 public interface IEPlayer extends IEPlayerControl {
 
     void release();
-    
+
     ExoPlayer getExoPlayer();
 
     /**

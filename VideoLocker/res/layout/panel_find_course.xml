@@ -12,7 +12,7 @@
         android:descendantFocusability="blocksDescendants"
         android:paddingBottom="5dp">
 
-        <org.edx.mobile.view.custom.ETextView
+        <org.edx.indonesiax.view.custom.ETextView
             android:id="@+id/findcourse_tv"
             style="@style/semibold_text"
             android:layout_width="match_parent"
@@ -38,8 +38,8 @@
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="15sp" />
-        
-        <org.edx.mobile.view.custom.ETextView
+
+        <org.edx.indonesiax.view.custom.ETextView
             android:id="@+id/course_not_listed_tv"
             style="@style/semibold_text"
             android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
             android:text="@string/course_not_listed_text"
             android:textColor="@color/cyan_text_navigation"
             android:textSize="14sp" />
-        
+
     </RelativeLayout>
     <!-- put a frame over this cell, so that corners look rounded -->
 

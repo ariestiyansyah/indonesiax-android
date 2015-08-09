@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@color/grey_act_background">
 
-        <org.edx.mobile.view.custom.CourseImageHeader
+        <org.edx.indonesiax.view.custom.CourseImageHeader
             android:id="@+id/header_image_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
             android:padding="12dp"
             android:background="@drawable/course_image_header_text_backing">
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/course_detail_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                 android:paddingBottom="6dp"
                 tools:text="test course" />
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/course_detail_extras"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

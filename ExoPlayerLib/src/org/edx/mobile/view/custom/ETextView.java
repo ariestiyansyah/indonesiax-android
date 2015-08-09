@@ -1,4 +1,4 @@
-package org.edx.mobile.view.custom;
+package org.edx.indonesiax.view.custom;
 
 
 import android.content.Context;

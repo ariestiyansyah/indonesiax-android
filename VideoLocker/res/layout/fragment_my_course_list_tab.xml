@@ -9,7 +9,7 @@
         android:layout_alignParentTop="true"
         android:visibility="visible" />
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/no_course_tv"
         style="@style/bold_text"
         android:layout_width="match_parent"

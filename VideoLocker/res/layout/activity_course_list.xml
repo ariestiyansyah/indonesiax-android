@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/no_course_tv"
                 style="@style/bold_text"
                 android:layout_width="match_parent"
@@ -72,7 +72,7 @@
 
     </android.support.v4.widget.DrawerLayout>
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/downloadMessage"
         style="@style/downloading_message"
         android:text="@string/started_downloading"

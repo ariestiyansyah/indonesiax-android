@@ -1,6 +1,6 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
-import org.edx.mobile.util.MemoryUtil;
+import org.edx.indonesiax.util.MemoryUtil;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 
@@ -14,7 +14,7 @@ public class MemoryTests extends BaseTestCase {
                 "available = "
                         + MemoryUtil.format(RuntimeEnvironment
                                 .application, bytes));
-        
+
         bytes = MemoryUtil.getAvailableInternalMemory(RuntimeEnvironment
                 .application);
         print(

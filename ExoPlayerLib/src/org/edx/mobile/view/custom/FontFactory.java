@@ -1,4 +1,4 @@
-package org.edx.mobile.view.custom;
+package org.edx.indonesiax.view.custom;
 
 import java.util.HashMap;
 
@@ -24,7 +24,7 @@ public class FontFactory {
     /**
      * Returns TypeFace for the given font name. Font file must exist in
      * assets/fonts folder.
-     * 
+     *
      * @param context
      * @param font
      * @return
@@ -33,7 +33,7 @@ public class FontFactory {
         if (font == null) {
             return null;
         }
-        
+
         Typeface typeface = fontMap.get(font);
         if (typeface == null) {
             Log.i(getClass().getName(), "Creating typeface: " + font);

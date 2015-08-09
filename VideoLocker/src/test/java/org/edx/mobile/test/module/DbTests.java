@@ -1,13 +1,13 @@
-package org.edx.mobile.test.module;
+package org.edx.indonesiax.test.module;
 
-import org.edx.mobile.model.VideoModel;
-import org.edx.mobile.model.db.DownloadEntry;
-import org.edx.mobile.model.db.DownloadEntry.DownloadedState;
-import org.edx.mobile.model.db.DownloadEntry.WatchedState;
-import org.edx.mobile.module.db.DataCallback;
-import org.edx.mobile.module.db.IDatabase;
-import org.edx.mobile.module.db.impl.DatabaseFactory;
-import org.edx.mobile.test.BaseTestCase;
+import org.edx.indonesiax.model.VideoModel;
+import org.edx.indonesiax.model.db.DownloadEntry;
+import org.edx.indonesiax.model.db.DownloadEntry.DownloadedState;
+import org.edx.indonesiax.model.db.DownloadEntry.WatchedState;
+import org.edx.indonesiax.module.db.DataCallback;
+import org.edx.indonesiax.module.db.IDatabase;
+import org.edx.indonesiax.module.db.impl.DatabaseFactory;
+import org.edx.indonesiax.test.BaseTestCase;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.edx.mobile.player;
+package org.edx.indonesiax.player;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -22,10 +22,10 @@ import java.util.Formatter;
 import java.util.List;
 import java.util.Locale;
 
-import org.edx.mobile.player.IVideo.IClosedCaption;
-import org.edx.mobile.view.custom.SettingPopup;
-import org.edx.mobile.view.custom.cc.CCLanguageDialogFragment;
-import org.edx.mobile.view.custom.speed.SpeedDialogFragment;
+import org.edx.indonesiax.player.IVideo.IClosedCaption;
+import org.edx.indonesiax.view.custom.SettingPopup;
+import org.edx.indonesiax.view.custom.cc.CCLanguageDialogFragment;
+import org.edx.indonesiax.view.custom.speed.SpeedDialogFragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -71,7 +71,7 @@ import com.google.android.exoplayer.R;
  * <p>
  * Functions like show() and hide() have no effect when MediaController
  * is created in an xml layout.
- * 
+ *
  * MediaController will hide and
  * show the buttons according to these rules:
  * <ul>
@@ -214,7 +214,7 @@ public class EPlayerController extends FrameLayout {
             }
         }
 
-        // By default these are hidden. They will be enabled when setPrevNextListeners() is called 
+        // By default these are hidden. They will be enabled when setPrevNextListeners() is called
         mNextButton = (ImageButton) v.findViewById(R.id.next);
         if (mNextButton != null && !mFromXml && !mListenersSet) {
             mNextButton.setVisibility(View.GONE);
@@ -279,7 +279,7 @@ public class EPlayerController extends FrameLayout {
                 } else {
                     mPauseButton.setEnabled(true);
                 }
-            } 
+            }
             if (mRewButton != null) {
                 if (!mPlayer.canSeekBackward()) {
                     mRewButton.setEnabled(false);
@@ -314,7 +314,7 @@ public class EPlayerController extends FrameLayout {
             // when timeout is zero, control panel does not hide automatically
             timeout = 0;
         }
-        
+
         if (!mShowing && mAnchor != null) {
             setProgress();
             if (mPauseButton != null) {
@@ -359,7 +359,7 @@ public class EPlayerController extends FrameLayout {
         if (mSettingPopup != null) {
             mSettingPopup.dismiss();
         }
-        
+
         if (mAnchor == null) {
             return;
         }
@@ -412,14 +412,14 @@ public class EPlayerController extends FrameLayout {
 
         return position;
     }
-    
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
     //  super.onTouchEvent(event);
         show(sDefaultTimeout);
         return false;
     }
-    
+
     @Override
     public boolean onTrackballEvent(MotionEvent ev) {
         show(sDefaultTimeout);
@@ -523,21 +523,21 @@ public class EPlayerController extends FrameLayout {
                     @Override
                     public void onCcClicked() {
                         if (getContext() instanceof Activity) {
-                            CCLanguageDialogFragment langsDialog = new CCLanguageDialogFragment(getContext(), mPlayer.getVideo().getClosedCaptions(), 
+                            CCLanguageDialogFragment langsDialog = new CCLanguageDialogFragment(getContext(), mPlayer.getVideo().getClosedCaptions(),
                                     new CCLanguageDialogFragment.IListDialogCallback() {
-                                
+
                                 @Override
                                 public void onItemClicked(IClosedCaption lang) {
                                     mPlayer.getVideo().setSelectedClosedCaption(lang);
                                 }
-                                
+
                                 @Override
                                 public void onNoneClicked() {
                                     mPlayer.getVideo().setSelectedClosedCaption(null);
                                 }
                             });
                             langsDialog.setSelected(mPlayer.getVideo().getSelectedClosedCaption());
-                            
+
                             FragmentManager fm = ((Activity) getContext()).getFragmentManager();
                             langsDialog.show(fm, "languages");
                             dismiss();
@@ -552,31 +552,31 @@ public class EPlayerController extends FrameLayout {
                             speeds.add(1.f);
                             speeds.add(1.5f);
                             speeds.add(2.0f);
-                            
-                            SpeedDialogFragment speedDialog = new SpeedDialogFragment(getContext(), speeds, 
+
+                            SpeedDialogFragment speedDialog = new SpeedDialogFragment(getContext(), speeds,
                                     new SpeedDialogFragment.IListDialogCallback() {
-                                
+
                                 @Override
                                 public void onItemClicked(Float speed) {
                                     mPlayer.setPlaybackSpeed(speed);
                                 }
-                                
+
                                 @Override
                                 public void onNoneClicked() {
                                     mPlayer.setPlaybackSpeed(1.0f);
                                 }
                             });
                             speedDialog.setSelected(mPlayer.getPlaybackSpeed());
-                            
+
                             FragmentManager fm = ((Activity) getContext()).getFragmentManager();
                             speedDialog.show(fm, "speed");
                             dismiss();
                         }
                     }
-                    
+
                 };
             }catch(Exception e){
-                e.printStackTrace();    
+                e.printStackTrace();
             }
         }
     };
@@ -742,7 +742,7 @@ public class EPlayerController extends FrameLayout {
                 return;
             }
             int pos = mPlayer.getCurrentPosition();
-            
+
             // apply 30 seconds rewind
             pos -= (30 * 1000); // milliseconds
             mPlayer.seekTo(pos);
@@ -811,7 +811,7 @@ public class EPlayerController extends FrameLayout {
     }
 
     private static class MessageHandler extends Handler {
-        private final WeakReference<EPlayerController> mView; 
+        private final WeakReference<EPlayerController> mView;
 
         MessageHandler(EPlayerController view) {
             mView = new WeakReference<EPlayerController>(view);
@@ -850,15 +850,15 @@ public class EPlayerController extends FrameLayout {
     public void showProgress() {
         this.mProgress.setVisibility(View.VISIBLE);
     }
-    
+
     private void playNext() {
-        if (mNextListener != null 
+        if (mNextListener != null
                 && mNextButton != null
                 && mNextButton.getVisibility() == View.VISIBLE) {
             mNextListener.onClick(mNextButton);
         }
     }
-    
+
     private void playPrevious() {
         if (mPrevListener != null
                 && mPrevButton != null
@@ -866,7 +866,7 @@ public class EPlayerController extends FrameLayout {
             mPrevListener.onClick(mPrevButton);
         }
     }
-    
+
     private void setSettingButtonActive(boolean isActive){
         if(mSettingsButton!=null){
             if(isActive){
@@ -875,17 +875,17 @@ public class EPlayerController extends FrameLayout {
             }else{
                 mSettingsButton.setBackgroundResource
                 (R.drawable.ic_media_settings_inactive);
-            }   
+            }
         }
     }
-    
+
     /**
      * Fades out the preview.
      */
     private void fade() {
         mRoot.findViewById(R.id.preview_fader).setVisibility(View.VISIBLE);
     }
-    
+
     /**
      * Clears the fade on the preview.
      */

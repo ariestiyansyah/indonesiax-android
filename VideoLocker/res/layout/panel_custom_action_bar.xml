@@ -5,7 +5,7 @@
     android:layout_height="50dp"
     android:background="@android:color/white">
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/activity_title"
         style="@style/custom_activity_title"/>
 

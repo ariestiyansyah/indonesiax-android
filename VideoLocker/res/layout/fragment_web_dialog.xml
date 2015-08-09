@@ -6,7 +6,7 @@
     android:background="@android:color/white"
     android:orientation="vertical" >
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/tv_dialog_title"
         style="@style/bold_grey_text"
         android:layout_width="match_parent"
@@ -26,8 +26,8 @@
         android:layout_marginRight="10dp"
         android:background="@color/grey_act_background"
         android:layout_below="@id/tv_dialog_title" />
-    
-    
+
+
     <LinearLayout
         android:id="@+id/button_layout"
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:paddingTop="0.5dp"
         android:layout_alignParentBottom="true" >
 
-        <org.edx.mobile.view.custom.EButton
+        <org.edx.indonesiax.view.custom.EButton
             android:id="@+id/positiveButton"
             style="@style/bold_text"
             android:layout_width="0dp"
@@ -50,7 +50,7 @@
             android:textSize="15sp" />
     </LinearLayout>
 
-    <org.edx.mobile.view.custom.EdxWebView
+    <org.edx.indonesiax.view.custom.EdxWebView
         android:id="@+id/eula_webView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,18 +1,18 @@
-package org.edx.mobile.player;
+package org.edx.indonesiax.player;
 
 /**
  * @author rohan
- * 
+ *
  * This is implementation of PlayerControl class.
  * All the events of player control are forwarded to the player as it is.
  * This class lets player handle every event.
- * 
+ *
  */
 public class EPlayerControlImpl implements IEPlayerControl {
-    
+
     private IEPlayer player;
-    
-    public EPlayerControlImpl(IEPlayer player) { 
+
+    public EPlayerControlImpl(IEPlayer player) {
         this.player = player;
     }
 
@@ -85,7 +85,7 @@ public class EPlayerControlImpl implements IEPlayerControl {
     public void setPlaybackSpeed(float speed) {
         player.setPlaybackSpeed(speed);
     }
-    
+
     @Override
     public void setControlPanelAutoHide(boolean autoHide) {
         player.setControlPanelAutoHide(autoHide);

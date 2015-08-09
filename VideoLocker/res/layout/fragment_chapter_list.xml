@@ -26,7 +26,7 @@
             android:visibility="gone"
             tools:visibility="visible">
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 style="@style/semibold_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 android:layout_marginStart="10dp"
                 tools:targetApi="17" />
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/last_viewed_tv"
                 style="@style/semibold_text"
                 android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
         style="@style/api_progress_style"
         android:visibility="gone" />
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/downloadMessage"
         style="@style/downloading_message"
         android:text="@string/started_downloading"
@@ -95,7 +95,7 @@
         <include layout="@layout/panel_offline_access" />
     </LinearLayout>
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/no_chapter_tv"
         style="@style/bold_text"
         android:layout_width="match_parent"
@@ -108,7 +108,7 @@
         android:visibility="gone"
         android:gravity="center" />
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/course_content_available_tv"
         style="@style/bold_text"
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
 import android.content.Context;
 
@@ -10,10 +10,10 @@ import com.google.inject.Injector;
 import com.google.inject.Module;
 import com.google.inject.util.Modules;
 
-import org.edx.mobile.core.EdxDefaultModule;
-import org.edx.mobile.core.IEdxEnvironment;
-import org.edx.mobile.logger.Logger;
-import org.edx.mobile.util.Config;
+import org.edx.indonesiax.core.EdxDefaultModule;
+import org.edx.indonesiax.core.IEdxEnvironment;
+import org.edx.indonesiax.logger.Logger;
+import org.edx.indonesiax.util.Config;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;

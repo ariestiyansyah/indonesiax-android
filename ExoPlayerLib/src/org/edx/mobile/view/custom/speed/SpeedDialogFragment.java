@@ -1,4 +1,4 @@
-package org.edx.mobile.view.custom.speed;
+package org.edx.indonesiax.view.custom.speed;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class SpeedDialogFragment extends DialogFragment {
 
     private IListDialogCallback callback;
     private SpeedAdapter adapter;
-    
+
     private void setupWindow() {
         setStyle(DialogFragment.STYLE_NO_TITLE, android.R.style.Theme_Holo_Dialog);
         getDialog().getWindow().setBackgroundDrawableResource(android.R.color.transparent);
@@ -24,13 +24,13 @@ public class SpeedDialogFragment extends DialogFragment {
 
     private SpeedDialogFragment() {
     }
-    
+
     public SpeedDialogFragment(Context context, List<Float> speeds, IListDialogCallback c) {
         super();
         setStyle(DialogFragment.STYLE_NO_TITLE, android.R.style.Theme_Holo_Dialog);
-        
+
         this.callback = c;
-        adapter = new 
+        adapter = new
                 SpeedAdapter(context) {
             @Override
             public void onItemClicked(Float lang) {
@@ -47,7 +47,7 @@ public class SpeedDialogFragment extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         setupWindow();
-        
+
         View v = inflater.inflate(R.layout.panel_speed_popup_dialog_fragment, container,
                 false);
         try{
@@ -59,7 +59,7 @@ public class SpeedDialogFragment extends DialogFragment {
         }
         return v;
     }
-    
+
     /**
      * Marks given speed value as selected in the adapter.
      * @param speed

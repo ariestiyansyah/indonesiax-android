@@ -1,10 +1,10 @@
-package org.edx.mobile.player;
+package org.edx.indonesiax.player;
 
 import android.widget.MediaController.MediaPlayerControl;
 
 /**
  * @author rohan
- * 
+ *
  * This class represents custom {@link MediaPlayerControl}.
  * This class has all the build-in controls, additionally a few controls that edX app requires.
  *
@@ -16,21 +16,21 @@ public interface IEPlayerControl extends MediaPlayerControl {
      * @return
      */
     boolean isFullScreen();
-    
+
     /**
      * Toggles player orientation between Landscape and Portrait views.
      */
     void    toggleFullScreen();
-    
+
     /**
      * Sets playback speed for the player.
      * This method can be called while player is in any state.
      * @param speed
      */
     void    setPlaybackSpeed(float speed);
-    
+
     /**
-     * If autoHide is true, then control panel of the player fades out 
+     * If autoHide is true, then control panel of the player fades out
      * automatically after 3 seconds.
      * If autoHide is false, then control panel doesn't fade out automatically.
      * Tapping on the player preview toggles visibility of the control panel.
@@ -44,13 +44,13 @@ public interface IEPlayerControl extends MediaPlayerControl {
      * @return
      */
     boolean isControlPanelAutoHide();
-    
+
     /**
      * Sets video model to the player.
      * @param video
      */
     void    setVideo(IVideo video);
-    
+
     /**
      * Returns currently playing video model.
      * @return

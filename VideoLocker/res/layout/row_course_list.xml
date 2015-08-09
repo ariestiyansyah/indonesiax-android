@@ -41,7 +41,7 @@
                 android:paddingBottom="8dp"
                 android:gravity="bottom">
 
-                <org.edx.mobile.view.custom.ETextView
+                <org.edx.indonesiax.view.custom.ETextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
@@ -54,7 +54,7 @@
                     android:shadowRadius="2"
                     android:text="@string/course_friends_also_enrolled"/>
 
-                <org.edx.mobile.view.custom.SocialFacePileView
+                <org.edx.indonesiax.view.custom.SocialFacePileView
                     android:id="@+id/course_item_facepileview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:targetApi="17" >
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 style="@style/bold_white_text"
                 android:textSize="10sp"
                 android:layout_marginLeft="40dp"
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content" />
         </RelativeLayout>
 
-        <org.edx.mobile.view.custom.ETextView
+        <org.edx.indonesiax.view.custom.ETextView
             android:id="@+id/course_name"
             style="@style/bold_grey_text"
             android:layout_width="match_parent"
@@ -128,7 +128,7 @@
             android:layout_below="@id/course_name"
             tools:targetApi="17" >
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/starting_from"
                 style="@style/bold_white_text"
                 android:layout_width="wrap_content"
@@ -157,7 +157,7 @@
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/cyan_circle" />
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/new_course_content"
                 style="@style/bold_cyan_text"
                 android:layout_width="wrap_content"
@@ -189,7 +189,7 @@
             android:layout_below="@id/course_name"
             tools:targetApi="17">
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/org_code_tv"
                 style="@style/regular_text"
                 android:layout_width="wrap_content"
@@ -208,7 +208,7 @@
                 android:text="@string/or_symbol"
                 android:textSize="12sp" />
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/school_code_tv"
                 style="@style/regular_text"
                 android:layout_width="wrap_content"

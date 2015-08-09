@@ -1,10 +1,10 @@
-package org.edx.mobile.view;
+package org.edx.indonesiax.view;
 
 import android.view.View;
 import android.webkit.WebView;
 
-import org.edx.mobile.R;
-import org.edx.mobile.test.http.HttpBaseTestCase;
+import org.edx.indonesiax.R;
+import org.edx.indonesiax.test.http.HttpBaseTestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricGradleTestRunner;

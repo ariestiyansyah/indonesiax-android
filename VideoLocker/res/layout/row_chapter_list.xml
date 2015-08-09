@@ -12,7 +12,7 @@
     android:paddingBottom="5dp"
     tools:targetApi="17" >
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/chapter_name"
         style="@style/regular_grey_text"
         android:layout_width="wrap_content"
@@ -63,8 +63,8 @@
 
             <include layout="@layout/view_progress_wheel" />
         </LinearLayout>
-    
-    <org.edx.mobile.view.custom.ETextView
+
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/no_of_videos"
         style="@style/semibold_text"
         android:layout_width="wrap_content"
@@ -94,7 +94,7 @@
         android:scaleType="fitXY"
         android:visibility="gone"
         tools:targetApi="17" />
-    
-    
+
+
 
 </RelativeLayout>

@@ -1,12 +1,12 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
 import com.segment.analytics.Options;
 import com.segment.analytics.Properties;
 import com.segment.analytics.Traits;
 
-import org.edx.mobile.module.analytics.ISegment;
-import org.edx.mobile.module.analytics.ISegmentImpl;
-import org.edx.mobile.module.analytics.ISegmentTracker;
+import org.edx.indonesiax.module.analytics.ISegment;
+import org.edx.indonesiax.module.analytics.ISegmentImpl;
+import org.edx.indonesiax.module.analytics.ISegmentTracker;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -329,7 +329,7 @@ public class SegmentTests extends BaseTestCase {
         // verify that the track method was called
         Mockito.verify(tracker).track(Mockito.eq(ISegment.Keys.USER_LOGOUT),
                 (Properties) Mockito.any());
-        
+
         assertTrue(props.containsKey(ISegment.Keys.NAME));
         assertTrue(props.containsKey(ISegment.Keys.CONTEXT));
 
@@ -437,7 +437,7 @@ public class SegmentTests extends BaseTestCase {
 
         Mockito.verify(tracker).track(Mockito.eq(ISegment.Keys.SIGN_UP),
                 (Properties) Mockito.any());
-            
+
         assertTrue(props.containsKey(ISegment.Keys.NAME));
 
         Properties cxt = (Properties) props.get(ISegment.Keys.CONTEXT);
@@ -453,7 +453,7 @@ public class SegmentTests extends BaseTestCase {
         // verify that the identity method was called
         Mockito.verify(tracker).track(Mockito.eq(ISegment.Keys.FIND_COURSES),
                 (Properties) Mockito.any());
-            
+
         assertTrue(props.containsKey(ISegment.Keys.NAME));
         assertTrue(props.containsKey(ISegment.Keys.CATEGORY));
         assertTrue(props.containsKey(ISegment.Keys.LABEL));

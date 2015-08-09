@@ -1,7 +1,7 @@
-package org.edx.mobile.view.custom.cc;
+package org.edx.indonesiax.view.custom.cc;
 
-import org.edx.mobile.player.IVideo.IClosedCaption;
-import org.edx.mobile.view.custom.BaseListAdapter;
+import org.edx.indonesiax.player.IVideo.IClosedCaption;
+import org.edx.indonesiax.view.custom.BaseListAdapter;
 
 import android.content.Context;
 import android.view.View;
@@ -24,9 +24,9 @@ public abstract class ClosedCaptionAdapter extends BaseListAdapter<IClosedCaptio
             holder.tv_ccLang.setBackgroundResource(R.color.cc_lang_selected);
         } else {
             holder.tv_ccLang.setBackgroundResource(R.color.list_selector);
-        } 
+        }
     }
-    
+
     @Override
     public BaseViewHolder getTag(View convertView) {
         ViewHolder holder = new ViewHolder();

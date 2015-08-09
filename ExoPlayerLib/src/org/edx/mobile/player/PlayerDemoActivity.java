@@ -1,4 +1,4 @@
-package org.edx.mobile.player;
+package org.edx.indonesiax.player;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,9 +56,9 @@ public class PlayerDemoActivity extends Activity implements
 
     private boolean autoPlay = true;
     private int playerPosition;
-    
+
     private IVideo video = new IVideo() {
-        
+
         private IClosedCaption selectedClosedCaption;
 
         @Override
@@ -66,29 +66,29 @@ public class PlayerDemoActivity extends Activity implements
             String contentUri = "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";;
             return contentUri;
         }
-        
+
         @Override
         public String getTitle() {
             return "video title here";
         }
-        
+
         @Override
         public String getExternalLink() {
             return "https://www.edx.org/";
         }
-        
+
         @Override
         public List<IClosedCaption> getClosedCaptions() {
             // TODO: use CC URLs here
             List<IClosedCaption> list = new ArrayList<IVideo.IClosedCaption>();
             list.add(new IClosedCaption() {
-                
+
                 @Override
                 public String getPath() {
                     // TODO: give a file path of srt file
                     return "fake path";
                 }
-                
+
                 @Override
                 public String getLanguage() {
                     return "English";
@@ -101,7 +101,7 @@ public class PlayerDemoActivity extends Activity implements
         public void setSelectedClosedCaption(IClosedCaption lang) {
             this.selectedClosedCaption = lang;
         }
-        
+
         @Override
         public IClosedCaption getSelectedClosedCaption() {
             return selectedClosedCaption;
@@ -126,7 +126,7 @@ public class PlayerDemoActivity extends Activity implements
                 arg0.performClick();
                 return true;
             }
-            
+
         });
 
         mediaController = new EPlayerController(this);

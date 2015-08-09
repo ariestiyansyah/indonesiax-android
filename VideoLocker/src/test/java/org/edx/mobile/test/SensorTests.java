@@ -1,4 +1,4 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -6,14 +6,14 @@ import android.view.Display;
 import android.view.Surface;
 import android.view.WindowManager;
 
-import org.edx.mobile.util.OrientationDetector;
+import org.edx.indonesiax.util.OrientationDetector;
 import org.junit.Test;
 import org.robolectric.RuntimeEnvironment;
 
 public class SensorTests extends BaseTestCase {
-    
+
     private final Object lock = new Object();
-    
+
     public void testRotation() throws Exception {
         print("landscape=" + isDeviceLandscape());
     }
@@ -25,7 +25,7 @@ public class SensorTests extends BaseTestCase {
         display.getSize(outSize);
         int r = display.getRotation();
         print( "rotation=" + r);
-        
+
         if (r == Surface.ROTATION_0) {
             // portrait
             return false;
@@ -42,7 +42,7 @@ public class SensorTests extends BaseTestCase {
             // landscape
             return true;
         }
-        
+
         return false;
     }
 
@@ -54,12 +54,12 @@ public class SensorTests extends BaseTestCase {
                 super.onLandscapeLeft();
                 print("landscape left");
             }
-            
+
             protected void onLandscapeRight() {
                 super.onLandscapeRight();
                 print("landscape right");
             }
-            
+
             @Override
             protected void onPortrait() {
                 super.onPortrait();
@@ -67,11 +67,11 @@ public class SensorTests extends BaseTestCase {
             }
         };
         d.start();
-        
+
         synchronized (lock) {
             lock.wait(10 * 1000);
         }
-        
+
         d.stop();
     }
 }

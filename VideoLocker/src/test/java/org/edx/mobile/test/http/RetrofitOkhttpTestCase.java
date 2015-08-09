@@ -1,4 +1,4 @@
-package org.edx.mobile.test.http;
+package org.edx.indonesiax.test.http;
 
 import android.content.Context;
 
@@ -9,11 +9,11 @@ import com.squareup.okhttp.mockwebserver.MockResponse;
 import com.squareup.okhttp.mockwebserver.MockWebServer;
 import com.squareup.okhttp.mockwebserver.RecordedRequest;
 
-import org.edx.mobile.http.GzipRequestInterceptor;
-import org.edx.mobile.http.LoggingInterceptor;
-import org.edx.mobile.http.OauthHeaderRequestInterceptor;
-import org.edx.mobile.http.OfflineRequestInterceptor;
-import org.edx.mobile.test.BaseTestCase;
+import org.edx.indonesiax.http.GzipRequestInterceptor;
+import org.edx.indonesiax.http.LoggingInterceptor;
+import org.edx.indonesiax.http.OauthHeaderRequestInterceptor;
+import org.edx.indonesiax.http.OfflineRequestInterceptor;
+import org.edx.indonesiax.test.BaseTestCase;
 import org.junit.Ignore;
 import org.robolectric.RuntimeEnvironment;
 

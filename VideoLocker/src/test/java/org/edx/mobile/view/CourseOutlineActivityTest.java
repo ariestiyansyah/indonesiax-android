@@ -1,9 +1,9 @@
-package org.edx.mobile.view;
+package org.edx.indonesiax.view;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
-import org.edx.mobile.model.api.EnrolledCoursesResponse;
+import org.edx.indonesiax.model.api.EnrolledCoursesResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;

@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package org.edx.indonesiax.view;
 
 import android.annotation.SuppressLint;
 import android.graphics.drawable.Drawable;
@@ -9,9 +9,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import org.edx.mobile.R;
-import org.edx.mobile.event.DownloadEvent;
-import org.edx.mobile.third_party.iconify.IconDrawable;
+import org.edx.indonesiax.R;
+import org.edx.indonesiax.event.DownloadEvent;
+import org.edx.indonesiax.third_party.iconify.IconDrawable;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -5,7 +5,7 @@
     android:background="@color/grey_act_background"
     android:orientation="vertical" >
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/empty_list_view"
         style="@style/bold_text"
         android:layout_width="match_parent"

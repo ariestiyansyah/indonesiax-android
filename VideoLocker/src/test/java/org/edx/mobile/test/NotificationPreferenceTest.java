@@ -1,9 +1,9 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
 
-import org.edx.mobile.model.api.CourseEntry;
-import org.edx.mobile.module.notification.EdxLocalParseChannel;
-import org.edx.mobile.module.notification.NotificationPreference;
+import org.edx.indonesiax.model.api.CourseEntry;
+import org.edx.indonesiax.module.notification.EdxLocalParseChannel;
+import org.edx.indonesiax.module.notification.NotificationPreference;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

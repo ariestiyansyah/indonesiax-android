@@ -1,13 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="org.edx.mobile.MainActivity" >
+    tools:context="org.edx.indonesiax.MainActivity" >
 
     <item
         android:id="@+id/offline"
         android:actionLayout="@layout/view_offline_text"
         android:showAsAction="always"
         android:title="@string/offline_text"/>
-    
+
    <item
         android:id="@+id/progress_download"
         android:actionLayout="@layout/view_progress_download_btn"
@@ -36,5 +36,5 @@
         android:title="@string/unread_text"
         android:visible="false"
         />
-   
+
 </menu>

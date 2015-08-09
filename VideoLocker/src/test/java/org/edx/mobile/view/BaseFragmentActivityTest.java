@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package org.edx.indonesiax.view;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -32,17 +32,17 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.edx.mobile.R;
-import org.edx.mobile.base.BaseFragmentActivity;
-import org.edx.mobile.event.FlyingMessageEvent;
-import org.edx.mobile.model.db.DownloadEntry;
-import org.edx.mobile.module.db.IDatabase;
-import org.edx.mobile.module.db.impl.DatabaseFactory;
-import org.edx.mobile.module.prefs.PrefManager;
-import org.edx.mobile.test.http.HttpBaseTestCase;
-import org.edx.mobile.util.AppConstants;
-import org.edx.mobile.util.NetworkUtil;
-import org.edx.mobile.view.dialog.WebViewDialogFragment;
+import org.edx.indonesiax.R;
+import org.edx.indonesiax.base.BaseFragmentActivity;
+import org.edx.indonesiax.event.FlyingMessageEvent;
+import org.edx.indonesiax.model.db.DownloadEntry;
+import org.edx.indonesiax.module.db.IDatabase;
+import org.edx.indonesiax.module.db.impl.DatabaseFactory;
+import org.edx.indonesiax.module.prefs.PrefManager;
+import org.edx.indonesiax.test.http.HttpBaseTestCase;
+import org.edx.indonesiax.util.AppConstants;
+import org.edx.indonesiax.util.NetworkUtil;
+import org.edx.indonesiax.view.dialog.WebViewDialogFragment;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -241,7 +241,7 @@ public class BaseFragmentActivityTest extends HttpBaseTestCase {
         controller.start();
         // Social features state persistence
         PrefManager pmFeatures = new PrefManager(activity, PrefManager.Pref.FEATURES);
-        assertEquals(NetworkUtil.isSocialFeatureFlagEnabled(activity, Mockito.mock(org.edx.mobile.util.Config.class)),
+        assertEquals(NetworkUtil.isSocialFeatureFlagEnabled(activity, Mockito.mock(org.edx.indonesiax.util.Config.class)),
                 pmFeatures.getBoolean(PrefManager.Key.ALLOW_SOCIAL_FEATURES, false));
         // Action bar state initialization
         ActionBar bar = activity.getActionBar();

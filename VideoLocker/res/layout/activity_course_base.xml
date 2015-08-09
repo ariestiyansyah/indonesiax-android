@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/downloadMessage"
                 style="@style/downloading_message"
                 android:text="@string/started_downloading"
@@ -29,7 +29,7 @@
                 style="@style/offline_msg_bar_style"
                 android:gravity="center_vertical"
                 android:visibility="gone">
-                <org.edx.mobile.view.custom.ETextView
+                <org.edx.indonesiax.view.custom.ETextView
                     android:text="@string/offline_text"
                     android:textColor="@color/edx_brand_secondary_base"
                     android:layout_height="0dp"
@@ -61,14 +61,14 @@
                     android:layout_gravity="center_vertical"
                     tools:targetApi="17">
 
-                    <org.edx.mobile.third_party.iconify.IconView
+                    <org.edx.indonesiax.third_party.iconify.IconView
                         android:id="@+id/video_download_indicator"
                         app:iconName="fa_spinner"
                         android:layout_width="14dp"
                         android:layout_height="14dp"
                         android:baselineAlignBottom="true"/>
 
-                    <org.edx.mobile.view.custom.ETextView
+                    <org.edx.indonesiax.view.custom.ETextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                         tools:targetApi="17" />
 
 
-                    <org.edx.mobile.view.custom.ETextView
+                    <org.edx.indonesiax.view.custom.ETextView
                         android:id="@+id/download_in_progress_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <org.edx.mobile.view.custom.ETextView
+                        <org.edx.indonesiax.view.custom.ETextView
                             android:text="@string/last_accessed"
                             android:textColor="@color/edx_brand_primary_base"
                             android:textSize="16sp"
@@ -129,7 +129,7 @@
                             android:layout_width="wrap_content"
                             android:layout_gravity="left|start"
                             tools:targetApi="17"/>
-                        <org.edx.mobile.view.custom.ETextView
+                        <org.edx.indonesiax.view.custom.ETextView
                             android:id="@+id/last_access_text"
                             android:textSize="16sp"
                             android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
                     </LinearLayout>
 
 
-                    <org.edx.mobile.view.custom.ETextView
+                    <org.edx.indonesiax.view.custom.ETextView
                         android:id="@+id/last_access_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -198,7 +198,7 @@
                         android:text="@string/assessment_previous"
                         android:textColor="?attr/buttonTextColor" />
 
-                    <org.edx.mobile.view.custom.ETextView
+                    <org.edx.indonesiax.view.custom.ETextView
                         android:id="@+id/prev_unit_title"
                         style="@style/section_lbl_style"
                         android:visibility="gone" />
@@ -226,7 +226,7 @@
                         android:text="@string/assessment_next"
                         android:textColor="?attr/buttonTextColor"/>
 
-                    <org.edx.mobile.view.custom.ETextView
+                    <org.edx.indonesiax.view.custom.ETextView
                         android:id="@+id/next_unit_title"
                         style="@style/section_lbl_style"
                         android:visibility="gone" />

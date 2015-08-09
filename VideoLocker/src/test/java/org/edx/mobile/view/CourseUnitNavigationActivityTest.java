@@ -1,11 +1,11 @@
-package org.edx.mobile.view;
+package org.edx.indonesiax.view;
 
 import android.app.ActionBar;
 import android.content.res.Configuration;
 import android.view.View;
 
-import org.edx.mobile.R;
-import org.edx.mobile.view.custom.DisableableViewPager;
+import org.edx.indonesiax.R;
+import org.edx.indonesiax.view.custom.DisableableViewPager;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;

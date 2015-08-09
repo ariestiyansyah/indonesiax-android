@@ -1,8 +1,8 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.services.ViewPagerDownloadManager;
-import org.edx.mobile.view.common.RunnableCourseComponent;
+import org.edx.indonesiax.model.course.CourseComponent;
+import org.edx.indonesiax.services.ViewPagerDownloadManager;
+import org.edx.indonesiax.view.common.RunnableCourseComponent;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

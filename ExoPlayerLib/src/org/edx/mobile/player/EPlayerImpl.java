@@ -1,4 +1,4 @@
-package org.edx.mobile.player;
+package org.edx.indonesiax.player;
 
 import com.google.android.exoplayer.ExoPlayer;
 
@@ -21,7 +21,7 @@ public class EPlayerImpl implements IEPlayer {
     @Override
     public void toggleFullScreen() {
         isFullScreen = !isFullScreen;
-        
+
         updateOrientation(isFullScreen);
     }
 
@@ -82,7 +82,7 @@ public class EPlayerImpl implements IEPlayer {
             // maximum seek position
             positionMs = getDuration();
         }
-        
+
         exoPlayer.seekTo(positionMs);
     }
 
@@ -97,7 +97,7 @@ public class EPlayerImpl implements IEPlayer {
     }
 
     private void updateOrientation(boolean isFullScreen) {
-        // TODO Player display should be shown in 
+        // TODO Player display should be shown in
         // landscape or portrait as per the value of isFullScreen flag
     }
 
@@ -120,17 +120,17 @@ public class EPlayerImpl implements IEPlayer {
     public IVideo getVideo() {
         return mVideo;
     }
-    
+
     @Override
     public float getPlaybackSpeed() {
         return exoPlayer.getPlaybackSpeed();
     }
-    
+
     @Override
     public void release() {
         exoPlayer.release();
     }
-    
+
     @Override
     public ExoPlayer getExoPlayer() {
         return exoPlayer;

@@ -1,8 +1,8 @@
-package org.edx.mobile.view;
+package org.edx.indonesiax.view;
 
-import org.edx.mobile.base.BaseFragmentActivity;
-import org.edx.mobile.interfaces.NetworkObserver;
-import org.edx.mobile.interfaces.NetworkSubject;
+import org.edx.indonesiax.base.BaseFragmentActivity;
+import org.edx.indonesiax.interfaces.NetworkObserver;
+import org.edx.indonesiax.interfaces.NetworkSubject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

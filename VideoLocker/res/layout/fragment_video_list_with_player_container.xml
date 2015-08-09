@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     android:background="@color/grey_act_background"
     android:orientation="vertical" >
-    
-    <org.edx.mobile.view.custom.ETextView
+
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/empty_list_view"
         style="@style/bold_text"
         android:layout_width="match_parent"
@@ -57,14 +57,14 @@
             <include layout="@layout/panel_delete_video_btns" />
         </LinearLayout>
     </LinearLayout>
-    
+
     <LinearLayout
         android:id="@+id/container_player"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:visibility="gone"
         android:orientation="vertical"
-        android:layout_below="@id/top_panel" > 
+        android:layout_below="@id/top_panel" >
     </LinearLayout>
 
     <ListView
@@ -76,7 +76,7 @@
         style="@style/default_list"
         android:transcriptMode="disabled"/>
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/downloadMessage"
         style="@style/downloading_message"
         android:text="@string/started_downloading"

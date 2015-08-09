@@ -1,4 +1,4 @@
-package org.edx.mobile.view.custom;
+package org.edx.indonesiax.view.custom;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +18,13 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
     public static final int STATE_SELECTED = 1;
     protected Context context;
     private List<T> items = new ArrayList<T>();
-    private SparseIntArray selection = new SparseIntArray(); 
+    private SparseIntArray selection = new SparseIntArray();
     public static final long MIN_CLICK_INTERVAL = 1000; //in millis
-    
+
     public BaseListAdapter(Context context) {
         this.context = context;
     }
-    
+
     /**
      * Selects the list row at specified position.
      * @param position
@@ -32,7 +32,7 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
     public void select(int position) {
         selection.put(position, STATE_SELECTED);
     }
-    
+
     /**
      * De-selects the list row at specified position.
      * @param position
@@ -40,7 +40,7 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
     public void unselect(int position) {
         selection.put(position, STATE_NOT_SELECTED);
     }
-    
+
     /**
      * Selects all the items in this adapter.
      */
@@ -49,14 +49,14 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
             select(i);
         }
     }
-    
+
     /**
      * De-selects all the items from this adapter.
      */
     public void unselectAll() {
         selection.clear();
     }
-    
+
     /**
      * Returns true if list row at specified position is selected, false otherwise.
      * @param position
@@ -68,7 +68,7 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
             return false;
         return (val == STATE_SELECTED);
     }
-    
+
     /**
      * Returns list of selected items.
      * @return
@@ -82,7 +82,7 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
         }
         return selectedItems;
     }
-    
+
     /**
      * Returns true if at least one item in the list is selected, false otherwise.
      * @return
@@ -98,7 +98,7 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
     public void add(T item) {
         items.add(item);
     }
-    
+
     /**
      * Removes specified object from the adapter and returns success.
      * @param item
@@ -107,11 +107,11 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
     public boolean remove(T item) {
         return items.remove(item);
     }
-    
+
     /**
-     * Clears existing items from the adapter and sets given list as the data. 
-     * If null is provided, this method clears the existing values. 
-     * This avoids null value errors. 
+     * Clears existing items from the adapter and sets given list as the data.
+     * If null is provided, this method clears the existing values.
+     * This avoids null value errors.
      * @param items
      */
     public void setItems(List<T> items) {
@@ -122,7 +122,7 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
         }
         this.selection.clear();
     }
-    
+
     /**
      * Clears all items from this adapter.
      */
@@ -145,12 +145,12 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
         int pos = items.indexOf(item);
         return pos;
     }
-    
+
     @Override
     public long getItemId(int index) {
         return index;
     }
-    
+
     public List<T> getItems() {
         return items;
     }
@@ -162,32 +162,32 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
                 // create list row
                 LayoutInflater inflator = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflator.inflate(getListItemLayoutResId(), null);
-                
+
                 // apply a tag to this list row
                 BaseViewHolder tag = getTag(convertView);
                 convertView.setTag(tag);
             }
-    
+
             // get the tag for this list row
             BaseViewHolder tag = (BaseViewHolder) convertView.getTag();
             // put position into the holder object
             tag.position = position;
-            
+
             // get model data for this list row
             T model = items.get(position);
-            
+
             // now render data for this list row
             render(tag, model);
-            
+
             return convertView;
         } catch(Exception ex) {
             ex.printStackTrace();
         }
-        
+
         return convertView;
     }
-    
-    
+
+
 
     /**
      * Sub-class should override this method to render model's data to ViewHolder tag.
@@ -217,5 +217,5 @@ public abstract class BaseListAdapter<T> extends BaseAdapter implements OnItemCl
         public int position;
         public String videoId;
     }
-    
+
 }

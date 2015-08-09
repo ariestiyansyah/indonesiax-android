@@ -1,29 +1,28 @@
-package org.edx.mobile.test.http;
+package org.edx.indonesiax.test.http;
 
 import org.apache.http.HttpStatus;
-import org.edx.mobile.http.HttpManager;
-import org.edx.mobile.http.HttpRequestDelegate;
-import org.edx.mobile.model.Filter;
-import org.edx.mobile.model.api.AnnouncementsModel;
-import org.edx.mobile.model.api.AuthResponse;
-import org.edx.mobile.model.api.EnrolledCoursesResponse;
-import org.edx.mobile.model.api.HandoutModel;
-import org.edx.mobile.model.api.ProfileModel;
-import org.edx.mobile.model.api.ResetPasswordResponse;
-import org.edx.mobile.model.api.SectionEntry;
-import org.edx.mobile.model.api.SyncLastAccessedSubsectionResponse;
-import org.edx.mobile.model.api.VideoResponseModel;
-import org.edx.mobile.model.course.BlockPath;
-import org.edx.mobile.model.course.BlockType;
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.model.course.CourseStructureJsonHandler;
-import org.edx.mobile.model.course.CourseStructureV1Model;
-import org.edx.mobile.model.course.HasDownloadEntry;
-import org.edx.mobile.model.course.IBlock;
-import org.edx.mobile.module.registration.model.RegistrationDescription;
-import org.edx.mobile.services.CourseManager;
-import org.edx.mobile.services.ServiceManager;
-import org.edx.mobile.util.Config;
+import org.edx.indonesiax.http.HttpManager;
+import org.edx.indonesiax.http.HttpRequestDelegate;
+import org.edx.indonesiax.model.Filter;
+import org.edx.indonesiax.model.api.AnnouncementsModel;
+import org.edx.indonesiax.model.api.AuthResponse;
+import org.edx.indonesiax.model.api.EnrolledCoursesResponse;
+import org.edx.indonesiax.model.api.HandoutModel;
+import org.edx.indonesiax.model.api.ProfileModel;
+import org.edx.indonesiax.model.api.ResetPasswordResponse;
+import org.edx.indonesiax.model.api.SectionEntry;
+import org.edx.indonesiax.model.api.SyncLastAccessedSubsectionResponse;
+import org.edx.indonesiax.model.api.VideoResponseModel;
+import org.edx.indonesiax.model.course.BlockPath;
+import org.edx.indonesiax.model.course.BlockType;
+import org.edx.indonesiax.model.course.CourseComponent;
+import org.edx.indonesiax.model.course.CourseStructureJsonHandler;
+import org.edx.indonesiax.model.course.CourseStructureV1Model;
+import org.edx.indonesiax.model.course.HasDownloadEntry;
+import org.edx.indonesiax.model.course.IBlock;
+import org.edx.indonesiax.module.registration.model.RegistrationDescription;
+import org.edx.indonesiax.services.CourseManager;
+import org.edx.indonesiax.util.Config;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -47,7 +46,7 @@ import static org.junit.Assert.assertTrue;
  * make the service call.
  * unless we find a way to handle it,  we will disable all the testing agaist
  * real webservice right now
- * 
+ *
  */
 public class ApiTests extends HttpBaseTestCase {
 
@@ -56,7 +55,7 @@ public class ApiTests extends HttpBaseTestCase {
     public void setUp() throws Exception {
         super.setUp();
     }
-    
+
     @Test
     public void testSyncLastSubsection() throws Exception {
         if( shouldSkipTest ) return;

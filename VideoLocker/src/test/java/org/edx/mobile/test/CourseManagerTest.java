@@ -1,9 +1,9 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
-import org.edx.mobile.model.course.CourseStructureJsonHandler;
-import org.edx.mobile.model.course.CourseStructureV1Model;
-import org.edx.mobile.model.course.IBlock;
-import org.edx.mobile.services.CourseManager;
+import org.edx.indonesiax.model.course.CourseStructureJsonHandler;
+import org.edx.indonesiax.model.course.CourseStructureV1Model;
+import org.edx.indonesiax.model.course.IBlock;
+import org.edx.indonesiax.services.CourseManager;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package org.edx.mobile.test.http;
+package org.edx.indonesiax.test.http;
 
 import android.text.TextUtils;
 
@@ -11,11 +11,11 @@ import com.squareup.okhttp.mockwebserver.MockResponse;
 import com.squareup.okhttp.mockwebserver.MockWebServer;
 import com.squareup.okhttp.mockwebserver.RecordedRequest;
 
-import org.edx.mobile.http.Api;
-import org.edx.mobile.http.IApi;
-import org.edx.mobile.services.ServiceManager;
-import org.edx.mobile.test.BaseTestCase;
-import org.edx.mobile.util.Config;
+import org.edx.indonesiax.http.Api;
+import org.edx.indonesiax.http.IApi;
+import org.edx.indonesiax.services.ServiceManager;
+import org.edx.indonesiax.test.BaseTestCase;
+import org.edx.indonesiax.util.Config;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Ignore;

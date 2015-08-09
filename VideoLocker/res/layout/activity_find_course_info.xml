@@ -11,7 +11,7 @@
         android:visibility="gone"
         android:layout_alignParentTop="true"/>
 
-    <org.edx.mobile.view.custom.EdxWebView
+    <org.edx.indonesiax.view.custom.EdxWebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,7 +23,7 @@
         style="@style/api_progress_style"
         android:visibility="gone" />
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/offline_mode_message"
         style="@style/offline_mode_message"/>
 </RelativeLayout>

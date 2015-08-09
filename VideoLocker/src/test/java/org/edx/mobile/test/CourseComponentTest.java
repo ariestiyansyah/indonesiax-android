@@ -1,10 +1,10 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
-import org.edx.mobile.model.Filter;
-import org.edx.mobile.model.course.BlockModel;
-import org.edx.mobile.model.course.BlockType;
-import org.edx.mobile.model.course.CourseComponent;
-import org.edx.mobile.model.course.VideoBlockModel;
+import org.edx.indonesiax.model.Filter;
+import org.edx.indonesiax.model.course.BlockModel;
+import org.edx.indonesiax.model.course.BlockType;
+import org.edx.indonesiax.model.course.CourseComponent;
+import org.edx.indonesiax.model.course.VideoBlockModel;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;

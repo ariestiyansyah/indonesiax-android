@@ -1,4 +1,4 @@
-package org.edx.mobile.view;
+package org.edx.indonesiax.view;
 
 import android.app.ActionBar;
 import android.content.res.Configuration;
@@ -13,8 +13,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-import org.edx.mobile.R;
-import org.edx.mobile.test.http.HttpBaseTestCase;
+import org.edx.indonesiax.R;
+import org.edx.indonesiax.test.http.HttpBaseTestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;

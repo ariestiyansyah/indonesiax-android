@@ -6,7 +6,7 @@
     android:background="@android:color/white"
     android:padding="10dp">
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/downloads_name"
         style="@style/semibold_text"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
             android:src="@drawable/ic_close" />
     </LinearLayout>
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/download_time"
         style="@style/regular_text"
         android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
         android:textSize="12sp"
         tools:targetApi="17" />
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/download_percentage"
         style="@style/regular_text"
         android:layout_width="wrap_content"
@@ -95,7 +95,7 @@
         android:progress="40"
         tools:targetApi="17" />
 
-    <org.edx.mobile.view.custom.ETextView
+    <org.edx.indonesiax.view.custom.ETextView
         android:id="@+id/txtDownloadFailed"
         style="@style/semibold_text"
         android:layout_width="match_parent"

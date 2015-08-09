@@ -1,4 +1,4 @@
-package org.edx.mobile.view.custom;
+package org.edx.indonesiax.view.custom;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -23,7 +23,7 @@ public abstract class SettingPopup extends PopupWindow implements PopupWindow.On
 
     public SettingPopup(Context context, Point p) {
         super(context);
-        
+
         Resources r = context.getResources();
         float popupHeight = TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP, POPUP_HEIGHT, r.getDisplayMetrics());
@@ -36,14 +36,14 @@ public abstract class SettingPopup extends PopupWindow implements PopupWindow.On
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = layoutInflater.inflate(R.layout.panel_settings_popup, null);
         layout.findViewById(R.id.tv_closedcaption).setOnClickListener(new OnClickListener() {
-            
+
             @Override
             public void onClick(View v) {
                 onCcClicked();
             }
         });
         layout.findViewById(R.id.tv_speedcontrol).setOnClickListener(new OnClickListener() {
-            
+
             @Override
             public void onClick(View v) {
                 onSpeedClicked();
@@ -56,18 +56,18 @@ public abstract class SettingPopup extends PopupWindow implements PopupWindow.On
         setWidth((int)popupWidth);
         setHeight((int)popupHeight);
         setFocusable(true);
-        
+
         // Clear the default translucent background
         setBackgroundDrawable(new BitmapDrawable());
-        
+
         // Displaying the popup at the specified location, + offsets.
         showAtLocation(layout, Gravity.NO_GRAVITY, p.x-(int)popupWidth, p.y-(int)popupHeight);
-        
+
         setOnDismissListener(this);
     }
-    
+
     public abstract void onCcClicked();
-    
+
     public abstract void onSpeedClicked();
 
     @Override

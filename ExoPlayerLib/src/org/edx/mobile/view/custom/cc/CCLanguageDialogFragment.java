@@ -1,8 +1,8 @@
-package org.edx.mobile.view.custom.cc;
+package org.edx.indonesiax.view.custom.cc;
 
 import java.util.List;
 
-import org.edx.mobile.player.IVideo.IClosedCaption;
+import org.edx.indonesiax.player.IVideo.IClosedCaption;
 
 import android.app.DialogFragment;
 import android.content.Context;
@@ -20,7 +20,7 @@ public class CCLanguageDialogFragment extends DialogFragment {
 
     private IListDialogCallback callback;
     private ClosedCaptionAdapter adapter;
-    
+
     private void setupWindow() {
         setStyle(DialogFragment.STYLE_NO_FRAME, android.R.style.Theme_Holo_Dialog);
         getDialog().getWindow().setBackgroundDrawableResource(android.R.color.transparent);
@@ -32,9 +32,9 @@ public class CCLanguageDialogFragment extends DialogFragment {
     public CCLanguageDialogFragment(Context context, List<IClosedCaption> languages, IListDialogCallback c) {
         super();
         setStyle(DialogFragment.STYLE_NO_FRAME, android.R.style.Theme_Holo_Dialog);
-        
+
         this.callback = c;
-        adapter = new 
+        adapter = new
                 ClosedCaptionAdapter(context) {
             @Override
             public void onItemClicked(IClosedCaption lang) {
@@ -51,7 +51,7 @@ public class CCLanguageDialogFragment extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         setupWindow();
-        
+
         View v = inflater.inflate(R.layout.panel_cc_popup_dialog_fragment, container,
                 false);
         try{
@@ -81,7 +81,7 @@ public class CCLanguageDialogFragment extends DialogFragment {
         }
         return v;
     }
-    
+
     /**
      * Marks given cc as selected in the adapter.
      * @param cc

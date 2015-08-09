@@ -1,0 +1,20 @@
+package org.edx.indonesiax.model.api;
+
+/**
+ * For backward compatibility only
+ */
+public interface IPathNode {
+
+    public boolean isChapter();
+
+    public boolean isSequential();
+
+    public boolean isVertical();
+
+    public String getCategory();
+
+    public String getName();
+
+    public String getId();
+
+}

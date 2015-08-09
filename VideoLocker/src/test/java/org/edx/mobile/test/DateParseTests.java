@@ -1,7 +1,6 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
-import org.edx.mobile.util.DateUtil;
-import org.edx.mobile.util.EmailUtil;
+import org.edx.indonesiax.util.DateUtil;
 import org.junit.Test;
 
 import java.text.ParseException;
@@ -16,7 +15,7 @@ public class DateParseTests extends BaseTestCase {
     @Test
     public void testGetModificationDate() throws Exception {
         // example output is :   "2014-11-20 22:10:54.569200+00:00"
-        
+
         String date = DateUtil.getModificationDate();
         assertNotNull(date);
         print("modification date = " + date);

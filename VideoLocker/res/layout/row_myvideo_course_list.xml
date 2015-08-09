@@ -29,7 +29,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp" >
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/course_name"
                 style="@style/bold_grey_text"
                 android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                 android:text="@string/course_name"
                 android:textSize="16sp" />
 
-            <org.edx.mobile.view.custom.ETextView
+            <org.edx.indonesiax.view.custom.ETextView
                 android:id="@+id/school_code"
                 style="@style/regular_text"
                 android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
                 android:orientation="horizontal"
                 tools:targetApi="17" >
 
-                <org.edx.mobile.view.custom.ETextView
+                <org.edx.indonesiax.view.custom.ETextView
                     android:id="@+id/no_of_videos"
                     style="@style/regular_grey_text"
                     android:layout_width="wrap_content"
@@ -78,7 +78,7 @@
                     android:textColor="@color/org_code_txt"
                     android:textSize="12sp" />
 
-                <org.edx.mobile.view.custom.ETextView
+                <org.edx.indonesiax.view.custom.ETextView
                     android:id="@+id/size_of_videos"
                     style="@style/regular_grey_text"
                     android:layout_width="wrap_content"

@@ -1,6 +1,6 @@
-package org.edx.mobile.view.custom.speed;
+package org.edx.indonesiax.view.custom.speed;
 
-import org.edx.mobile.view.custom.BaseListAdapter;
+import org.edx.indonesiax.view.custom.BaseListAdapter;
 
 import android.content.Context;
 import android.view.View;
@@ -24,7 +24,7 @@ public abstract class SpeedAdapter extends BaseListAdapter<Float> {
         } else {
             holder.tvSpeed.setBackgroundResource(R.color.list_selector);
         }
-        
+
         if ((getCount()-1) == holder.position) {
             // this is last item in the list, so bottom corners must be rounded
             if (isSelected(holder.position)) {
@@ -34,7 +34,7 @@ public abstract class SpeedAdapter extends BaseListAdapter<Float> {
             }
         }
     }
-    
+
     @Override
     public BaseViewHolder getTag(View convertView) {
         ViewHolder holder = new ViewHolder();

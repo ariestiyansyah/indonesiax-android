@@ -1,7 +1,7 @@
-package org.edx.mobile.test;
+package org.edx.indonesiax.test;
 
 import android.net.Uri;
-import org.edx.mobile.view.custom.URLInterceptorWebViewClient;
+import org.edx.indonesiax.view.custom.URLInterceptorWebViewClient;
 import org.junit.Test;
 
 import java.util.HashMap;
