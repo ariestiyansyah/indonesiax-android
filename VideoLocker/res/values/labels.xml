@@ -1,37 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <!-- Closed caption button label -->
-	<string name="lbl_cc">CC</string>
+    <string name="lbl_cc">CC</string>
     <!-- Divider between current time and total time. For example  "2:33/5:10" -->
-	<string name="lbl_slash">/</string>
+    <string name="lbl_slash">/</string>
     <!-- Name of mode when user has no internet connection causing some features to be unavailable -->
-    <string name="lbl_offline_mode">Offline Mode</string>
+    <string name="lbl_offline_mode">Mode Offline</string>
     <!-- Label describing the meaning of offline mode -->
-    <string name="lbl_offline_mode_desc">In offline mode, you can only view videos that are saved on your device.</string>
+    <string name="lbl_offline_mode_desc"> Pada mode offline, Anda hanya dapat melihat video yang telah disimpan di perangkat Anda. </string>
     <!-- Button allowing user to open a web page corresponding to the current screen in a web browser -->
-    <string name="lbl_open_in_browser">Open in Browser</string>
+    <string name="lbl_open_in_browser">Buka di Browser</string>
     <!-- Button allowing user to open a web page corresponding to the current screen in a web browser -->
-    <string name="lbl_view_on_web">VIEW ON WEB</string>
+    <string name="lbl_view_on_web">LIHAT PADA WEB</string>
     <!-- Label indicating that the only course content visible in the app is videos -->
-    <string name="lbl_showing_only_videos">Showing only videos</string>
-
+    <string name="lbl_showing_only_videos">Hanya Tampilkan Video</string>
     <!-- Dialog Fragment Labels -->
     <!-- Alert dialog cancel button -->
-    <string name="label_cancel">Cancel</string>
+    <string name="label_cancel">Batalkan</string>
     <!-- Alert dialog No button -->
-    <string name="label_no">No</string>
+    <string name="label_no">Tidak</string>
     <!-- Alert dialog download button -->
-    <string name="label_download">Download</string>
+    <string name="label_download">Unduh</string>
     <!-- Alert dialog yes confirmation button -->
-    <string name="label_yes">Yes</string>
+    <string name="label_yes">Ya</string>
     <!-- Alert dialog delete confirmation button -->
-    <string name="label_delete">Delete</string>
+    <string name="label_delete">Hapus</string>
     <!-- Alert dialog edit list confirmation button -->
-    <string name="label_edit">Edit</string>
+    <string name="label_edit">Ubah</string>
     <!-- Alert dialog okay button -->
     <string name="label_ok">OK</string>
-    <!-- Alert dialog close button -->
-    <string name="label_close">Close</string>
-    <!-- Alert dialog continue confirmation button -->
-    <string name="label_continue">Continue</string>
+    <!--  Alert dialog close button  -->
+    <string name="label_close">Tutup</string>
+    <!--   Alert dialog continue confirmation button -->
+    <string name="label_continue">Lanjutkan</string>
 </resources>
