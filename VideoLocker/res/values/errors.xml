@@ -1,87 +1,60 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
+
     <!--  Network error messages -->
     <!--  Error shown when  user attempts an action but needs an internet connection -->
     <string name="network_not_connected">Anda tidak terhubung ke Internet.</string>
-    <!--  Concise error shown when user attempts an action but needs an internet connection
-      -->
+    <!--  Concise error shown when user attempts an action but needs an internet connection -->
     <string name="network_not_connected_short">Jaringan tidak dapat dihubungi</string>
-    <!--  Alert dialog title shown when a network request fails
-      -->
+    <!--  Alert dialog title shown when a network request fails -->
     <string name="reset_no_network_title">Koneksi bermasalah</string>
-    <!--  Alert dialog content shown when a network request fails because the user has no internet connection
-      -->
+    <!--  Alert dialog content shown when a network request fails because the user has no internet connection -->
     <string name="reset_no_network_message">Anda tidak terhubung ke Internet. Harap cek koneksi Internet Anda.</string>
-    <!--  Title of prompt indicating issue loading a video
-      -->
+    <!--  Title of prompt indicating issue loading a video -->
     <string name="network_error_header">Terjadi masalah saat memuat video</string>
-    <!--  Content of prompt indicating issue loading a video
-      -->
+    <!--  Content of prompt indicating issue loading a video -->
     <string name="network_error_message">Harap cek koneksi Internet Anda.</string>
-    <!--  Login error messages
-      -->
-    <!--  Error shown during login when user attempts login without entering a username or e-mail
-      -->
+    <!--  Login error messages -->
+    <!--  Error shown during login when user attempts login without entering a username or e-mail -->
     <string name="error_enter_email">Silakan masukkan nama pengguna atau alamat email Anda dan coba kembali.</string>
-    <!--  Error shown during login when user enters an invalid email address
-      -->
+    <!--  Error shown during login when user enters an invalid email address -->
     <string name="error_invalid_email">Harap pastikan alamat email Anda diformat dengan benar dan coba kembali.</string>
-    <!--  Error shown during login when user attempts login without entering a password
-      -->
+    <!--  Error shown during login when user attempts login without entering a password -->
     <string name="error_enter_password">Silakan masukkan sandi Anda dan coba kembali.</string>
-    <!--  Title of alert shown during login when user attempts login via Facebook without having linked their account
-      -->
+    <!--  Title of alert shown during login when user attempts login via Facebook without having linked their account -->
     <string name="error_account_not_linked_title_fb">Akun Facebook account tidak terkait dengan akun edX</string>
-    <!--  Content of alert shown during login when user attempts login via Facebook without having linked their account
-      -->
+    <!--  Content of alert shown during login when user attempts login via Facebook without having linked their account -->
     <string name="error_account_not_linked_desc_fb">Pastikan akun Facebook Anda terkait dengan akun edX Anda di edx.org</string>
-    <!--  Title of alert shown during login when user attempts login via Google without having linked their account
-      -->
+    <!--  Title of alert shown during login when user attempts login via Google without having linked their account -->
     <string name="error_account_not_linked_title_google">Akun Google tidak terkait dengan akun edX</string>
-    <!--  Content of alert shown during login when user attempts login via Google without having linked their account
-      -->
+    <!--  Content of alert shown during login when user attempts login via Google without having linked their account -->
     <string name="error_account_not_linked_desc_google">Pastikan akun Google Anda terkait dengan akun edX Anda di edx.org</string>
-    <!--  Download error messages
-      -->
-    <!--  Label shown on video list item whose download failed
-      -->
+    <!--  Download error messages -->
+    <!--  Label shown on video list item whose download failed -->
     <string name="error_download_failed">Pengunduhan Gagal</string>
-    <!--  Confirmation message shown when attempting to download a large quantity of video data
-      -->
+    <!--  Confirmation message shown when attempting to download a large quantity of video data -->
     <string name="file_size_exceeded">Ukuran file yang diunduh melebihi sisa batas penyimpanan di perangkat Anda.</string>
-    <!--  Confirmation message shown when attempting to download a large quantity of video data
-      -->
+    <!--  Confirmation message shown when attempting to download a large quantity of video data -->
     <string name="download_exceed_message">Video-video yang Anda pilih ukurannya lebih besar dari 1 GB. Apakah Anda ingin mengunduh video-video ini?</string>
     <!--  Message shown when user attempts to download a video over cellular data,
-        but has chosen to only allow video downloads over wifi
-      -->
+        but has chosen to only allow video downloads over wifi -->
     <string name="wifi_off_message">Pengaturan unduh Anda saat ini hanya membolehkan penggunduhan via Wi-Fi. \n Harap koneksikan ke sebuah jaringan Wi-Fi atau ubah pengaturan unduh Anda.</string>
-    <!--  Offline Access
-      -->
-    <!--  Label shown when user attempts to view a course section that hasn't been synced
-      -->
+    <!--  Offline Access -->
+    <!--  Label shown when user attempts to view a course section that hasn't been synced -->
     <string name="section_offline_header">Seksi ini tidak tersedia pada mode offline</string>
-    <!--  Label shown when user attempts to view a course section that hasn't been synced
-      -->
+    <!--  Label shown when user attempts to view a course section that hasn't been synced -->
     <string name="section_offline_message">Jika Anda menggunduh konten untuk seksi yang berbeda, \n pergi ke seksi tersebut untuk melihat konten.</string>
-    <!--  Alert dialog title shown when user attempts to view a video that hasn't been synced
-      -->
+    <!--  Alert dialog title shown when user attempts to view a video that hasn't been synced -->
     <string name="video_offline_header">Video ini tidak tersedia secara offline.</string>
-    <!--  Alert dialog content shown when user attempts to view a video that hasn't been synced
-      -->
+    <!--  Alert dialog content shown when user attempts to view a video that hasn't been synced -->
     <string name="video_offline_message">Silakan pilih sebuah video yang telah anda unduh ke perangkat Anda.</string>
-    <!--  Registration Error Messages
-      -->
-    <!--  Error prompt shown during registration to indicate an empty field. Argument is a field name
-      -->
+    <!--  Registration Error Messages -->
+    <!--  Error prompt shown during registration to indicate an empty field. Argument is a field name -->
     <string name="error_enter_field">Silakan masukkan %1$s Anda.</string>
-    <!--  Error prompt shown during registration to indicate a field missing a selection. Argument is a field name
-      -->
+    <!--  Error prompt shown during registration to indicate a field missing a selection. Argument is a field name -->
     <string name="error_select_field">Silakan pilih %1$s Anda.</string>
-    <!--  Error prompt shown during registration when a field entry is too short. Arguments are 1) a field name, 2) a number
-      -->
+    <!--  Error prompt shown during registration when a field entry is too short. Arguments are 1) a field name, 2) a number -->
     <string name="error_min_length">%1$s setidak-tidaknya sepanjang %2$d karakter.</string>
-    <!--  Error prompt shown during registration when a field entry is too long. Arguments are 1) a field name, 2) a number
-      -->
+    <!--  Error prompt shown during registration when a field entry is too long. Arguments are 1) a field name, 2) a number -->
     <string name="error_max_length">%1$s tidak dapat memiliki lebih dari %2$d karakter.</string>
 </resources>
